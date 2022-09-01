@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html{
+    overflow-x: hidden;
+    
+}
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 62.5%;
+  }
+
+body{
+    background-color: #f8f8fa;
+}
+
+header{
+    background-color: #4617fe;
+    height: 52vh;
+}
+
+nav{
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+}
+
+.nav-item-active{
+    width: 7rem;
+    padding: 0.5rem 0.7rem;
+    text-align: center;
+    background-color: #fff;
+    color: #896dfd;
+    border-radius: 0.3rem;
+}
+
+.header-image{
+    width: 55%;
+    position: absolute;
+    right: 0;
+    top: 6rem;
+}
+
+.logo{
+    width: 15%;
+    padding-left: 2rem;
+}
+
+.header-text{
+    position: relative;
+    top: 18rem;
+}
+
+.header-text > img{
+    width: 10%;
+    padding-left: 2rem;
+}
+
+.header-text > h2{
+    padding-left: 2rem;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.header-text > p{
+    padding-left: 2rem;
+    color: #fff;
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+
+.companies{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+}
+
+.company-items{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Righteous", sans-serif;
+}
+
+.api-heading{
+    padding-left: 2rem;
+    padding-top: 5rem;
+}
+
+.cards{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cards::after{
+    content: ">";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 890px;
+    right: 0px;
+    background-color: #5a31fc;
+    color: #fff;
+    font-size: 40px;
+  }
+
+.card-active{
+    width: 35%;
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 1rem;
+}
+
+.card-active > img{
+    width: 50px;
+}
+
+.card-active > h3{
+    color: #6e4afd;
+    font-size: 2rem;
+}
+
+.card-active > p{
+    font-size: 1.5rem;
+}
+
+.card > img{
+    width: 50px;
+}
+
+.card > h3{
+    font-size: 2rem;
+}
+
+.card > p{
+    font-size: 1.5rem;
+}
+
+.card{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 1rem;
+}
+
+.blog-heading{
+    padding-left: 2rem;
+    padding-top: 5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.blog-heading::after{
+    content: "See All Articles";
+    color: #a48efa;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.blog-card{
+    display: flex;
+    margin: 5rem 0;
+    background-color: #fff;
+    border-top-left-radius: 5rem;
+    height: 21vh;
+    position: relative;
+}
+
+.blog-content{
+    width: 55%;
+}
+
+.blog-content > h6{
+    color:  #9f87fd;
+    font-size: 1.35rem;
+}
+
+.blog-content > h3{
+   font-size: 1.5rem;
+}
+
+.blog-content > small{
+    font-size: 1.35rem;
+}
+
+.blog-image > img{
+    width: 90%;
+}
+
+.blog-image{
+    width: 45%;
+}
+
+.blog-bottom{
+    position: absolute;
+    top: 15rem;
+    left: 20rem;
+}
+
+.blog-author{
+    position: absolute;
+    top: 8rem;
+    left: 13rem;
+    width: 100%;
+}
+
+.faq-section{
+    background-color: #e9edff;
+    height: 30vh;
+    display: flex;
+}
+
+.faq-image{
+    display: none;
+}
+
+.faq-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.faq-content > h2{
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+}
+
+.faq-content > h4{
+    color: #000;
+    font-size: 1rem;
+}
+
+.faq-content > button{
+    padding: 7px 20px;
+    background-color: #5a31fc;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+}
+
+.download-section{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    align-items: center;
+    background-color: #fff;
+}
+
+.download-content > h1{
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  
+  .download-content > h1 > span{
+    font-weight: 200;
+  }
+  
+  .download-email{
+    padding: 10px 8px;
+    border-radius: 30px;
+    background-color: #e9edff;
+  }
+  
+  form{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  input{
+    color: #000000;
+    background-color: #e9edff;
+    width: 170px;
+    border: none;
+    font-weight: bolder;
+  }
+  
+  .download-email > form > button{
+    padding: 7px 15px;
+    color: #fff;
+    background-color: #5a31fc;
+    width: 130px;
+    border: none;
+    border-radius: 30px;
+  }
+
+  .footer-section{
+    height: 30vh;
+    background-color: #4718fe;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  .list{
+    display: flex;
+    color: #fff;
+    column-gap: 2rem;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 5rem;
+ 
+  }
+
+  .logos-list{
+    color: #fff;
+    display: flex;
+    margin-top: 1rem;
+    column-gap: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .list-items{
+    list-style-type: none;
+  }
+
+  .footer-left > ul > .list-items:nth-child(3)::before{
+    content: "|";
+    position: relative;
+    right: 10px;
+    color: #fff;
+  }
+  
+  .footer-left > ul > .list-items:nth-child(4)::before{
+    content: "|";
+    position: relative;
+    right: 10px;
+    color: #fff;
+  }
+  
+  .footer-left > ul > .list-items:nth-child(5)::before{
+    content: "|";
+    position: relative;
+    right: 10px;
+    color: #fff;
+  }
+
+  .logos-list > .list-items:nth-child(2)::before{
+    content: "|";
+    position: relative;
+    right: 7px;
+    color: #fff;
+  }
+  
+  .logos-list > .list-items:nth-child(3)::before{
+    content: "|";
+    position: relative;
+    right: 7px;
+    color: #fff;
+  }
